@@ -32,6 +32,26 @@
                 class="hidden p-2 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block ">
                 Get Started
             </a>
+
+            <!--Hamburger icon-->
+            <button id="menu-btn" class="open block hamburger md:hidden focus:outline-none">
+                <!--The bars-->
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!--Mobile menu-->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+            </div>
         </div>
     </nav>
 
@@ -65,9 +85,17 @@
 
     <!--Features section-->
     <section id="features">
-        <!--Flex container-->
-        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
-            <!--What's different-->
+        <!--Flex container-->.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
             <div class="flex flex-col space-y-10 md:w-1/2">
                 <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
                     What's different about manage?
@@ -301,7 +329,7 @@
             <div class="flex flex-col justify-between">
                 <form>
                     <div class="flex space-x-3">
-                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                        <input type="text" class="flex-1 px-1 rounded-full focus:outline-none"
                             placeholder="Updated in your inbox" />
                         <button
                             class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
@@ -315,6 +343,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
